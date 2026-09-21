@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 17a - Responsive Text Sizes</title>
+    <style>
+      body {
+        font-family: Roboto, Arial;
+        margin: 20px;
+      }
+
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .thumbnail {
+        width: 100%;
+        border-radius: 8px;
+        display: block;
+      }
+
+      .video-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+
+      .video-author,
+      .video-stats {
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+        margin: 2px 0;
+      }
+
+      /* --- Exercise 17a Requirement --- */
+      /* When screen is > 1000px wide, scale up font sizes */
+      @media (min-width: 1000px) {
+        .video-title {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .video-author,
+        .video-stats {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-preview">
+      <img class="thumbnail" src="https://via.placeholder.com/300x170" alt="thumbnail">
+      <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+      <p class="video-author">Marques Brownlee</p>
+      <p class="video-stats">3.4M views &#183; 6 months ago</p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="https://via.placeholder.com/300x170" alt="thumbnail">
+      <p class="video-title">Try Not To Laugh Challenge #9</p>
+      <p class="video-author">Markiplier</p>
+      <p class="video-stats">19M views &#183; 4 years ago</p>
+    </div>
+  </body>
+</html>
